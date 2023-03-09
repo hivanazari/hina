@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: 'Yekan';
+  src: local('Yekan'), local('Yekan'),
+      url('../public/Yekan.woff') format('woff'),
+      url('../public/Yekan.eot') format('eot');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body{
+  direction: rtl;
+  font-family: "Yekan";
+}
+.tbl th{
+  @apply border-2 border-red-200 bg-slate-300;
+}
+.tbl td{
+  @apply border-2 border-red-200;
+}
+.sidemenu li{
+  @apply mt-2;
+}
